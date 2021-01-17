@@ -1,0 +1,14 @@
+﻿<Window x:Class="Interactie_met_andere_applicaties.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interactie_met_andere_applicaties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <StackPanel>
+        <Button Name="btnExcel1" Content="Excel1" Margin="5" Click="btnExcel1_Click"/>
+        <Button Name="btnExcel2" Content="Excel2" Margin="5" Click="btnExcel2_Click"/>
+        <Button Name="btnWord" Content="Word" Margin="5" Click="btnWord_Click"/>
+    </StackPanel>
+</Window>

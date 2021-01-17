@@ -1,0 +1,33 @@
+﻿<Window x:Class="Interactie_met_andere_applicaties.FrmExcel1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interactie_met_andere_applicaties"
+        mc:Ignorable="d"
+        Title="FrmExcel1" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Bedrag" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox Name="txtBedrag" Grid.Row="0" Grid.Column="1" Margin="5"/>
+        <TextBlock Text="Termijn" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox Name="txtTermijn" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <TextBlock Text="Rentepercentage" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <TextBox Name="txtPercentage" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <TextBlock Text="Te Betalen" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBlock Name="txtTeBetalen" Grid.Row="3" Grid.Column="1" Margin="5" />
+        <Button Name="btnBereken" Content="Bereken" Grid.Row="4" Grid.Column="0" Click="btnBereken_Click"  Margin="5"/>
+
+        <Button Name="btnSluiten" Content="Sluiten" Grid.Row="4" Grid.Column="1" Click="btnSluiten_Click"  Margin="5"/>
+    </Grid>
+</Window>

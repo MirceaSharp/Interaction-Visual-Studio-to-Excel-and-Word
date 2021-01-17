@@ -1,0 +1,28 @@
+﻿<Window x:Class="Interactie_met_andere_applicaties.FrmExcel2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interactie_met_andere_applicaties"
+        mc:Ignorable="d"
+        Title="FrmExcel2" Height="350" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <ListBox Name="lstCursisten" Grid.Row="0" Grid.Column="0"/>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <CheckBox Name="cbMeisjes" Content="Meisjes" Margin="5"/>
+            <CheckBox Name="cbJongens" Content="Jongens" Margin="5"/>
+            <Button Name="btnInlezen" Content="Inlezen" Margin="5" Click="btnInlezen_Click"/>
+            <Button Name="btnGrafiek" Content="Grafiek" Margin="5" Click="btnGrafiek_Click"/>
+            <Button Name="btnSluiten" Content="Sluiten" Margin="5" Click="btnSluiten_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
